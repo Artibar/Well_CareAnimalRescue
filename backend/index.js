@@ -47,6 +47,10 @@ if(process.env.NODE_ENV !== 'production') {
   })
 }
 
+app.get('/healthz', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.listen(PORT, ()=>{
     connectToDB()
     
