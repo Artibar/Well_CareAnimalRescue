@@ -31,6 +31,7 @@ const Signup = ({ onToggle }) => {
         name: formData.name,
         email: formData.email,
         password: formData.password,
+        
       });
       navigate('/login')
     } catch (err) {
