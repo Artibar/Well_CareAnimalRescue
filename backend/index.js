@@ -46,7 +46,7 @@ if(process.env.NODE_ENV === 'production') {
   
   app.use(express.static(frontendDistPath));
 
-  app.get('*', (req, res) => {
+  app.get(/.*/, (req, res) => {
     const indexPath = path.join(frontendDistPath, 'index.html');
     console.log('Serving index.html from:', indexPath); // Debug log
     res.sendFile(indexPath);
