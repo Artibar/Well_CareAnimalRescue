@@ -40,11 +40,17 @@ app.use("/volunteer", volunteerRouter)
 app.use("/adoption", adoptionRouter)
 
 if(process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/dist')))
+  const frontendDistPath = path.join(__dirname, '../frontend/dist');
+  
+  console.log('Serving static files from:', frontendDistPath); // Debug log
+  
+  app.use(express.static(frontendDistPath));
 
-  app.get(/(.*)/, (req, res)=>{
-    res.sendFile(path.join(__dirname, '../frontend', 'dist', 'index.html'))
-  })
+  app.get('/(.*)/', (req, res) => {
+    const indexPath = path.join(frontendDistPath, 'index.html');
+    console.log('Serving index.html from:', indexPath); // Debug log
+    res.sendFile(indexPath);
+  });
 }
 
 app.get('/healthz', (req, res) => {
