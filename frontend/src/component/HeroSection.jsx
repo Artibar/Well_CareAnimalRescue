@@ -14,7 +14,7 @@ import Rescue0 from '../assets/Rescue0.jpeg'
 import Species from '../assets/Species.jpeg'
 import medical from '../assets/medical.jpeg'
 import Reha from '../assets/Reha.jpeg'
-import adopDog from '../assets/adopDog.jpeg'
+import AdopDog from '../assets/AdopDog.jpeg'
 import onSupport from '../assets/onSupport.jpeg'
 
 const HeroSection = () => {
@@ -147,7 +147,7 @@ const HeroSection = () => {
     {
       number: "05",
       title: "Adoption or Release",
-      image: adopDog,
+      image: AdopDog,
       description: "Domestic animals matched with families. Wildlife released to natural habitat or transferred to sanctuaries.",
       icon: Users,
       gradient: "from-orange-500 to-amber-600",
