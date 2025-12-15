@@ -27,7 +27,7 @@ const useAuthStore = create((set) => ({
     
     set({ loading: true, error: null });
     try {
-      const { data } = await api.post(`${baseURL}/auth/login`, credentials);
+      const { data } = await api.post(`/auth/login`, credentials);
 
       // Expect backend to return { token, user }
       if (data.token) {
@@ -61,7 +61,7 @@ const useAuthStore = create((set) => ({
   signup: async (userData) => {
     set({ loading: true, error: null });
     try {
-      const { data } = await api.post(`${baseURL}/auth/signup`, userData);
+      const { data } = await api.post('/auth/signup', userData);
       localStorage.setItem('token', data.token);
       set({
         user: data.user,
