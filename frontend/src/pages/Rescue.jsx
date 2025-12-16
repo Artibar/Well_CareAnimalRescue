@@ -365,7 +365,7 @@ const Rescue = () => {
                   <div>
                     <label className="flex items-center text-sm font-bold text-gray-700 mb-2">
                       <MapPin className="w-4 h-4 mr-2 text-green-600" />
-                      GPS Location
+                      GPS Location *
                     </label>
                     <button
                       type="button"

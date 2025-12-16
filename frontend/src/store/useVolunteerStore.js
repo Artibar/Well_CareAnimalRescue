@@ -3,7 +3,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import axios from 'axios';
 
-const API_BASE_URL =  import.meta.env.MODE === 'development' ? 'http://localhost:3000' : '';
+const API_BASE_URL =  import.meta.env.MODE === 'development' ? 'http://localhost:3000' : 'https://well-careanimalrescue.onrender.com';
 
 const useVolunteerStore = create(
   persist(
