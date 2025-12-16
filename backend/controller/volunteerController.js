@@ -25,7 +25,7 @@ export const createVolunteer = async (req, res) => {
       return res.status(400).json({ message: "All fields are required" });
     }
     const existingUser = await Volunteer.findOne({email})
-    if(!existingUser){
+    if(existingUser){
       return res.status(400).json({message:"Voulnteer with this email already exists"})
     }
     const newVolunteer = await Volunteer.create({
