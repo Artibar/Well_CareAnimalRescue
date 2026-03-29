@@ -1,12 +1,12 @@
-WellCare — Animal Rescue & Adoption Platform
+**WellCare — Animal Rescue & Adoption Platform**
 A platform where any user can raise concerns for animal rescue and adoption requests.
 
-The Story Behind It
+**The Story Behind It**
 This was a freelance project. The client wanted a form-based approach where users fill out a form to request animal rescue or adoption. But when I looked at it, I noticed that could be slow and unreliable — especially in areas with poor internet connectivity, like forests where rescue situations actually happen.
 So I suggested a different approach: instead of relying on a form, the organization should share their contact details directly on the website so users can just call them. It is faster, more reliable, and works even with bad internet.
 The organization was still in the planning stage and had not officially opened by the time I completed the website, so the contact details section is ready but pending their information.
 
-Features
+**Features**
 
 Role-based authentication — separate access for admin, volunteer, and general users
 Admin module — manage users, rescue requests, adoption listings, and donations
@@ -17,8 +17,8 @@ Donation module — users can contribute to support the organization
 JWT authentication — secure login and protected routes across all roles
 
 
-Tech Stack
-Layer Technology FrontendReact, JavaScript, Tailwind CSSState Management Zustand, Backend Node.js, Express Database MongoDB Authentication JWT (JSON Web Tokens)
+**Tech Stack**
+Layer Technology Frontend React, JavaScript, Tailwind CSSState Management Zustand, Backend Node.js, Express Database MongoDB Authentication JWT (JSON Web Tokens)
 
 Project Structure
 wellcare/
@@ -78,16 +78,16 @@ npm run dev
 Roles & Access
 Role What they can do AdminFull access — manage all users, requests, donations, and listingsVolunteer View and update assigned rescue cases UserSubmit rescue concerns, browse adoptions, make donations
 
-Why I Built It This Way
+**Why I Built It This Way**
 I chose Zustand for state management instead of Redux because it is simpler to set up and works well for a project of this size without unnecessary boilerplate. JWT handles authentication across all three roles through protected middleware on the backend, so every route checks the token and role before allowing access.
 The form suggestion from the client was understandable, but after thinking about the actual use case — someone spotting an injured animal in a remote area — waiting for a form to submit over a weak connection does not make sense. A direct phone number is always faster in that situation.
 
-Status
+**Status**
 The website is complete. The organization is in the planning stage and has not officially opened yet, so some content sections are pending their details.
 
-Author
+**Author**
 Arti Yashwant Barsagade
-GitHub: [your-github-link]
+
 Live:  https://well-careanimalrescue.onrender.com/<img width="1906" height="1016" alt="Screenshot 2026-03-29 163622" src="https://github.com/user-attachments/assets/c329ca3c-cdfd-48cf-aaa8-f55c3f6e3256" />
 <img width="1884" height="909" alt="Screenshot 2026-03-29 163601" src="https://github.com/user-attachments/assets/e074a76a-f6e9-4410-9424-b66886719659" />
 <img width="1883" height="975" alt="Screenshot 2026-03-29 163520" src="https://github.com/user-attachments/assets/1609222e-6e21-41e4-a130-f55b33221d80" />
