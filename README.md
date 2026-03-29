@@ -20,7 +20,7 @@ JWT authentication — secure login and protected routes across all roles
 **Tech Stack**
 Layer Technology Frontend React, JavaScript, Tailwind CSSState Management Zustand, Backend Node.js, Express Database MongoDB Authentication JWT (JSON Web Tokens)
 
-Project Structure
+**Project Structure
 wellcare/
 ├── client/                  # React frontend
 │   ├── src/
@@ -35,7 +35,7 @@ wellcare/
 │   ├── middleware/          # JWT auth middleware
 │   └── config/              # DB connection, env config
 └── .env                     # Environment variables
-
+**
 Getting Started
 Prerequisites
 
